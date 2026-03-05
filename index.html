@@ -190,17 +190,7 @@
     .project-item:hover { border-color: var(--line); }
 
     .project-dot {
-      width: 4px;
-      height: 4px;
-      border-radius: 50%;
-      background: var(--gold-dim);
-      flex-shrink: 0;
-      margin-top: 0.5em;
-      transition: background 0.2s;
-    }
-
-    .project-item:hover .project-dot {
-      background: var(--gold);
+      display: none;
     }
 
     .project-name {
@@ -423,7 +413,7 @@
             <span class="project-dot"></span>
             <span class="project-name">
               NeuriCo
-              <span style="font-size:0.92rem; color: var(--cream-dim); font-style: italic;">
+              <span style="font-size:1.5rem; color: var(--cream-dim); font-style: italic;">
                 — automates research and powers our initial exploration
               </span>
             </span>
@@ -434,7 +424,11 @@
           </li>
           <li class="project-item">
             <span class="project-dot"></span>
-            <span class="project-name">OpenAIReview</span>
+            <span class="project-name">OpenAIReview
+              <span style="font-size:1.5rem; color: var(--cream-dim); font-style: italic;">
+                — provides feedback to enable high-quality research
+              </span>
+            </span>
             <span class="project-links">
               <a class="tag" href="https://github.com/ChicagoHAI/OpenAIReview" target="_blank">Github</a>
               <a class="tag" href="https://github.com/ChicagoHAI/OpenAIReview/issues/23" target="_blank">Roadmap</a>
@@ -442,6 +436,9 @@
           </li>
         </ul>
       </div>
+      <p style="margin-top: 1rem; font-size: 1rem; color: var(--cream-dim);">
+        <a href="https://hypogenic.ai/arena" target="_blank" style="color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--gold-dim);">Explore more ideas on hypogenic</a>
+      </p>
     </div>
 
     <div class="apply-section">
@@ -464,9 +461,6 @@
 
   </div>
 
-  <footer>
-    <p>Fossick AI &nbsp;·&nbsp; hypogenic &nbsp;·&nbsp; 2026</p>
-  </footer>
 
 </body>
 </html>
