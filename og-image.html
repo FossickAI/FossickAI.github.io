@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { width: 1200px; height: 630px; overflow: hidden; }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Spectral:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="glow1" cx="15%" cy="25%" r="55%">
+      <stop offset="0%" stop-color="#c9963a" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#0f0e0b" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="85%" cy="75%" r="50%">
+      <stop offset="0%" stop-color="#c9963a" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#0f0e0b" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .label { font-family: 'Spectral', Georgia, serif; fill: #7a5820; font-size: 13px; letter-spacing: 0.22em; font-weight: 300; }
+      .title { font-family: 'Cormorant Garamond', Georgia, serif; fill: #ede4cc; font-size: 82px; font-weight: 300; letter-spacing: 0.01em; }
+      .subtitle { font-family: 'Cormorant Garamond', Georgia, serif; fill: #c9963a; font-size: 28px; font-weight: 300; font-style: italic; letter-spacing: 0.02em; }
+      .byline { font-family: 'Spectral', Georgia, serif; fill: #a89b7e; font-size: 15px; font-weight: 300; letter-spacing: 0.12em; }
+      .tl { fill: none; stroke: #c9963a; stroke-width: 0.7; }
+      .domain { font-family: 'Spectral', Georgia, serif; fill: #7a5820; font-size: 13px; letter-spacing: 0.18em; font-weight: 300; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0f0e0b"/>
+  <rect width="1200" height="630" fill="url(#glow1)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+
+  <!-- Topographic lines — top-left cluster -->
+  <ellipse class="tl" cx="96"  cy="140" rx="240" ry="155" opacity="0.45"/>
+  <ellipse class="tl" cx="96"  cy="140" rx="180" ry="116" opacity="0.45"/>
+  <ellipse class="tl" cx="96"  cy="140" rx="120" ry="77"  opacity="0.45"/>
+  <ellipse class="tl" cx="96"  cy="140" rx="60"  ry="39"  opacity="0.45"/>
+
+  <!-- Topographic lines — bottom-right cluster -->
+  <ellipse class="tl" cx="1110" cy="490" rx="310" ry="170" opacity="0.35"/>
+  <ellipse class="tl" cx="1110" cy="490" rx="248" ry="136" opacity="0.35"/>
+  <ellipse class="tl" cx="1110" cy="490" rx="186" ry="102" opacity="0.35"/>
+  <ellipse class="tl" cx="1110" cy="490" rx="124" ry="68"  opacity="0.35"/>
+  <ellipse class="tl" cx="1110" cy="490" rx="62"  ry="34"  opacity="0.35"/>
+
+  <!-- Top rule -->
+  <line x1="80" y1="52" x2="1120" y2="52" stroke="#c9963a" stroke-width="0.5" opacity="0.25"/>
+
+  <!-- Label -->
+  <text class="label" x="80" y="48" dy="-10">FOSSICK AI</text>
+
+  <!-- Main title -->
+  <text class="title" x="80" y="290">Fossick AI</text>
+
+  <!-- Subtitle -->
+  <text class="subtitle" x="83" y="352">Search for gold in foundation models</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="390" x2="340" y2="390" stroke="#c9963a" stroke-width="0.6" opacity="0.4"/>
+
+  <!-- Byline -->
+  <text class="byline" x="80" y="422">ARI HOLTZMAN &amp; CHENHAO TAN</text>
+
+  <!-- Bottom rule -->
+  <line x1="80" y1="578" x2="1120" y2="578" stroke="#c9963a" stroke-width="0.5" opacity="0.25"/>
+
+  <!-- Domain -->
+  <text class="domain" x="80" y="598">fossick.ai</text>
+</svg>
+</body>
+</html>
